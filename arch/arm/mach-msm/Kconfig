@@ -1868,6 +1868,12 @@ config MSM_CPU_FREQ_SET_MIN_MAX
 	  Allow setting min and max CPU frequencies. Sysfs can be used
 	  to override these values.
 
+config ALUCARD_HOTPLUG
+    bool "Enable alucard-hotplug cpu hotplug driver"
+    default n
+    help
+     Generic Alucard-hotplug cpu hotplug driver for ARM SOCs
+
 config MSM_CPU_FREQ_MAX
 	int "Max CPU Frequency"
 	depends on MSM_CPU_FREQ_SET_MIN_MAX
