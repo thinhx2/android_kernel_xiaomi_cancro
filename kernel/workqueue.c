@@ -3005,6 +3005,7 @@ EXPORT_SYMBOL_GPL(__alloc_workqueue_key);
 void destroy_workqueue(struct workqueue_struct *wq)
 {
 	unsigned int cpu;
+	int i;
 
 	/* drain it before proceeding with destruction */
 	drain_workqueue(wq);
